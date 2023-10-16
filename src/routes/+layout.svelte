@@ -1,12 +1,7 @@
 <script lang="ts">
-  import ParaglideJsSvelteKitProviderSSR from "../lib/ParaglideJsSvelteKitProviderSSR.svelte";
-  import ParaglideJsSvelteKitProviderCSR from "../lib/ParaglideJsSvelteKitProviderCSR.svelte";
+  import ParaglideJsSvelteKitProviderCsr from "$lib/ParaglideJsSvelteKitProviderCSR.svelte";
 </script>
 
-<!-- <ParaglideJsSvelteKitProviderSSR>
+<ParaglideJsSvelteKitProviderCsr>
   <slot />
-</ParaglideJsSvelteKitProviderSSR> -->
-
-<ParaglideJsSvelteKitProviderCSR>
-  <slot />
-</ParaglideJsSvelteKitProviderCSR>
+</ParaglideJsSvelteKitProviderCsr>

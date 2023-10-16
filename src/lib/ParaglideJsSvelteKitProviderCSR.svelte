@@ -2,7 +2,7 @@
   import { onSetLanguageTag, languageTag } from "@inlang/paraglide-js/example";
 
   // initialize a reactive language tag
-  $: _languageTag = languageTag;
+  $: _languageTag = languageTag();
 
   // the server should not listen for language tag changes
   if (import.meta.env.SSR === false) {
