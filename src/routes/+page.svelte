@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+  import { setLanguageTag } from "@inlang/paraglide-js/example";
+  import * as m from "@inlang/paraglide-js/example/messages";
+</script>
+
+<h1>{m.hello()}</h1>
+<!-- <p>{@html m.docs()}</p> -->
+
+<button on:click={() => setLanguageTag("de")}>change the language to DE</button>
+<button on:click={() => setLanguageTag("en")}>change the language to EN</button>
