@@ -1,14 +1,10 @@
 <script lang="ts">
-  import { setLanguageTag } from "@inlang/paraglide-js/example";
-  import * as m from "@inlang/paraglide-js/example/messages";
+  import * as m from "@inlang/paraglide-js/sveltekit-example/messages";
+  import { setLanguageTag, languageTag } from "@inlang/paraglide-js/sveltekit-example";
 </script>
 
-<h1>{m.hello()}</h1>
-<p>{@html m.docs()}</p>
-
-<button on:click={() => setLanguageTag("de")}>
-  change the language to "de"
-</button>
-<button on:click={() => setLanguageTag("en")}
-  >change the language to "en"
-</button>
+<p>{m.greeting({ name: "Samuel", count: 5 })}</p>
+<p>{m.currentLanguageTag({ languageTag: languageTag() })}</p>
+<button on:click={() => setLanguageTag("de")}>change language to "de"</button>
+<button on:click={() => setLanguageTag("en")}>change language to "en"</button>
+ 

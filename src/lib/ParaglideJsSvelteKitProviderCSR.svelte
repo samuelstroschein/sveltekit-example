@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onSetLanguageTag, languageTag } from "@inlang/paraglide-js/example";
+  import { onSetLanguageTag, languageTag } from "@inlang/paraglide-js/sveltekit-example";
 
   // initialize a reactive language tag
   $: _languageTag = languageTag();
